@@ -179,7 +179,7 @@ hr{
 
 /* Custom styling for ProfitHub area */
 /* Custom styling for title */
-.ProfitHub > img{
+.ProfitHub > a > img{
   color: white;
   width: 400px;
   font-size: 25px;
