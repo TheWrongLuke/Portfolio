@@ -167,6 +167,14 @@ hr{
   margin-top:20px;
   cursor: default;
 }
+.careerDate{
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top:20px;
+  cursor: default;
+}
 .skillsTitle{
   color: white;
   font-size: 40px;
