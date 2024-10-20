@@ -178,6 +178,36 @@ hr{
 
 
 /* Custom styling for ProfitHub area */
+
+.image-container {
+  padding: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Grid setup for 2 big and 3 small images */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for large images */
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.small-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for small images */
+  gap: 10px;
+}
+
 /* Custom styling for title */
 .ProfitHub > a > img{
   color: white;
