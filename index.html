@@ -27,12 +27,12 @@
     <h1 class="my-4 TitleName">Lukas Fossati</h1>
     <img src="Circle_Pic.png" alt="Portrait of Lukas Fossati" class="img-fluid mx-auto d-block portrait">
 
-    <!-- Quick Links Section -->
+    <!-- Quick Links Section https://www.youtube.com/@thewrongluke?sub_confirmation=1 -->
     <div id="quick_links" class="my-4">
         <a href="mailto:lukas.fossati.developer@gmail.com" target="_blank" class="btn btn-link"><i class="bi bi-envelope"></i></a>
         <a href="https://github.com/TheWrongLuke" target="_blank" class="btn btn-link"><i class="bi bi-github"></i></a>
         <a href="https://www.linkedin.com/in/lukas-fossati-b3137b228/" target="_blank" class="btn btn-link"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.youtube.com/@thewrongluke?sub_confirmation=1" target="_blank" class="btn btn-link"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.youtube.com/@thewrongluke" target="_blank" class="btn btn-link"><i class="bi bi-youtube"></i></a> 
         <a href="https://www.instagram.com/lukas_fossati/" target="_blank" class="btn btn-link"><i class="bi bi-instagram"></i></a>
     </div>
 
@@ -59,7 +59,11 @@
         <h2 class="my-4 projectTitle">Projects</h2>
         <div class="d-flex justify-content-center gap-3">
             <a class="project-btn" data-project="project1"><img class="projectIcons" src="ProfitHubLogo.png"></a>
-            <a class="project-btn" data-project="project3"><img class="projectIcons" src="Shadow_Trails_Logo.png"></a>
+            <a class="project-btn" data-project="project2"><img class="projectIcons" src="img/FlappyBirdLogo.png"></a>
+            <a class="project-btn" data-project="project3"><img class="projectIcons" src="img/GoldClickerLogo.png"></a>
+            <a class="project-btn" data-project="project4"><img class="projectIcons" src="img/RunnerLogo.png"></a>
+
+            <!-- <a class="project-btn" data-project="project5"><img class="projectIcons" src="Shadow_Trails_Logo.png"></a> -->
         </div>
 
         <!-- ProfitHub Section -->
@@ -115,10 +119,48 @@
             </div>
         </div>
 
-        <!-- GunRunner Section -->
+        <!-- flabby bird Section -->
         <div id="project2" class="project-content my-4" style="display: none;">
             <hr>
-            <h3 class="GunRunnerTitle">GunRunner</h3>
+            <h3 class="GunRunnerTitle">Flabby Bird</h3>
+            <div class="infoProfitHub">
+                <span class="badge bg-primary"> ReleseDate | 19/05/2025 </span>
+                <span class="badge bg-success"> Category | Game </span>
+                <span class="badge bg-warning"> Engine | Unity </span>
+                <span class="badge bg-danger"> Language | C# </span>
+            </div>
+            <div class="content container col">
+                <p class="GunRunnerBody">
+                    Even if <strong>Flabby Bird</strong> is an extremely simple game, it's a good project to start your fondamentals,
+                    it helps with a simple procedural generation, simple input movement, score counting
+                    and it's a good way to already start with a memory management by removing unseen or far objects.
+                </p>
+            </div>
+        </div>
+
+        <!-- Runner Section -->
+        <div id="project3" class="project-content my-4" style="display: none;">
+            <hr>
+            <h3 class="GunRunnerTitle">Gold Clicker</h3>
+            <div class="infoProfitHub">
+                <span class="badge bg-primary"> ReleseDate | 25/05/2025 </span>
+                <span class="badge bg-success"> Category | Game </span>
+                <span class="badge bg-warning"> Engine | Unity </span>
+                <span class="badge bg-danger"> Language | C# </span>
+            </div>
+            <div class="content container col">
+                <p class="GunRunnerBody">
+                    <strong>Gold Clicker</strong> is a classic clicker game like cookie clicker, 
+                    it's a good way to understand timers, earnings/seconds, calculate currecy per second 
+                    and a first understanding of UI and even small animations.
+                </p>
+            </div>
+        </div>
+
+        <!-- Runner Section -->
+        <div id="project4" class="project-content my-4" style="display: none;">
+            <hr>
+            <h3 class="GunRunnerTitle">Runner</h3>
             <div class="infoProfitHub">
                 <span class="badge bg-primary"> ReleseDate | ... </span>
                 <span class="badge bg-success"> Category | Game </span>
@@ -127,16 +169,27 @@
             </div>
             <div class="content container col">
                 <p class="GunRunnerBody">
-                    <strong>GunRunner</strong> is a mobile game currently in development using Unity 3D. 
-                    I chose this simple yet trending genre to challenge my skills and expand my knowledge. 
-                    As of today, I have successfully implemented the core mechanics and I am now progressing 
-                    to designing levels, create appealing graphics and incorporating in-game rewards.
-                </p>
-                <h3>Gameplay video will come soon</h3>
+                    <strong>Runner</strong> is a game currently in development using Unity recreating the game SubwaySurfers but in 2D top-down. 
+                    <br>
+                    <br>
+                    Creating a look alike of subway surfers on a 2D top down was a bit challeging to get the game to function in a 3D way,
+                    being able to run on different levels and jump from one to the other, but it's my favorite game so far i've been working on,
+                    creating boosters like the magnet, jetpack, jump boost, score multiplier was fun and easy once understood the fondamentals.
+                    <br>
+                    <br>
+                    with this game i've reinforced most of the skills i've learned previously, with upgrades, boosters, timers and cooldowns, level generation(using prefabs) and UI.
+                    <br>
+                    <br>
+                    I chose to make this game to challenge my skills and expand my knowledge as all other projects and reinforce the skills i had before. 
+                    <br>
+                    <br>
+                    This is currently the latest project i've been working on.
+                <!-- <h3>Gameplay video will come soon</h3> -->
             </div>
         </div>
-
-        <div id="project3" class="project-content my-4" style="display: none;">
+        
+        <!-- Shadow Trails 
+        <div id="project5" class="project-content my-4" style="display: none;">
             <hr>
             <h3 class="GunRunnerTitle">Shadow Trails</h3>
             <div class="infoProfitHub">
@@ -170,7 +223,7 @@
                 </p>
             
                 <h3>Development Video(Soon)</h3> 
-                <!-- Insert the development video link or embed here -->
+                Insert the development video link or embed here
                 <p class="GunRunnerBody">
                     The development video, which will show off the game mechanics, will be available soon. <em>Keep an eye out for the latest updates!</em>
                 </p>
@@ -182,7 +235,7 @@
                     allowfullscreen>
                 </iframe>
             </div>
-            
+        -->
         </div>
     </div>
 
@@ -209,11 +262,10 @@
             <div id="skill-chart-title">Programming Languages</div>
             
             <div class="chart-parent chart chart-bar chart-horizontal">
-                <div class="metric" style="width:85%">HTML + Bootstrap <span class="metric-value">85</span></div>
-                <div class="metric" style="width:75%">CSS <span class="metric-value">70</span></div>
                 <div class="metric" style="width:75%">C# <span class="metric-value">75</span></div>
-                <div class="metric" style="width:55%">Javascript <span class="metric-value">55</span></div>
-                <div class="metric" style="width:15%">C <span class="metric-value">15</span></div>
+                <div class="metric" style="width:70%">HTML + Bootstrap <span class="metric-value">70</span></div>
+                <div class="metric" style="width:50%">CSS <span class="metric-value">50</span></div>
+                <div class="metric" style="width:20%">Javascript <span class="metric-value">20</span></div>
             </div>
             <br>
             <hr>
@@ -222,12 +274,6 @@
             
             <div class="chart-parent chart chart-bar chart-horizontal">
                 <div class="metric" style="width:80%">Visual Studio<span class="metric-value">80</span></div>
-                <div class="metric" style="width:60%">WonderShareFilmora<span class="metric-value">60</span></div>
-                <div class="metric" style="width:60%">OBS Studio<span class="metric-value">60</span></div>
-                <div class="metric" style="width:50%">Figma<span class="metric-value">50</span></div>
-                <div class="metric" style="width:40%">Git<span class="metric-value">40</span></div>
-                <div class="metric" style="width:30%">Photoshop<span class="metric-value">30</span></div>
-                <div class="metric" style="width:30%">Blender<span class="metric-value">30</span></div>
             </div>
             
             <br>
@@ -237,7 +283,6 @@
             
             <div class="chart-parent chart chart-bar chart-horizontal">
                 <div class="metric" style="width:70%">Unity<span class="metric-value">70</span></div>
-                <div class="metric" style="width:15%">Unreal Engine<span class="metric-value">15</span></div>
             </div>
             
             <br>
@@ -245,8 +290,8 @@
             <div id="skill-chart-title">Spoken Languages</div>
             
             <div class="chart-parent chart chart-bar chart-horizontal">
-                <div class="metric" style="width:95%">English<span class="metric-value">95</span></div>
                 <div class="metric" style="width:100%">Italian<span class="metric-value">100</span></div>
+                <div class="metric" style="width:95%">English<span class="metric-value">95</span></div>
             </div>
         </div>
     </div>
