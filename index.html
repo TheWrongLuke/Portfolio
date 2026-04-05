@@ -1,309 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="keywords" content="programmer, coding, console, cv, unity, games developer, software developer, english, italian">
-    <meta name="description" content="Games developer in unity.">
-
-    <title>Lukas Fossati</title>
-
-    <!-- Icon -->
-    <link rel="icon" type="image/png" href="Icon_Rounded.png">
-    
-    <!-- Links -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
-    
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Lukas Fossati, game developer, Unity, C#, web developer, portfolio, HTML, CSS, JavaScript">
+  <meta name="description" content="Portfolio of Lukas Fossati — entry-level developer focused on Unity game development and front-end web projects.">
+  <title>Lukas Fossati | Portfolio</title>
+  <link rel="icon" type="image/png" href="Icon_Rounded.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="container text-center" style="height: 300vh;">
-    <!-- Title Section -->
-    <h1 class="my-4 TitleName">Lukas Fossati</h1>
-    <img src="Circle_Pic.png" alt="Portrait of Lukas Fossati" class="img-fluid mx-auto d-block portrait">
+<body id="top">
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top">Lukas Fossati</a>
 
-    <!-- Quick Links Section https://www.youtube.com/@thewrongluke?sub_confirmation=1 -->
-    <div id="quick_links" class="my-4">
-        <a href="mailto:lukas.fossati.developer@gmail.com" target="_blank" class="btn btn-link"><i class="bi bi-envelope"></i></a>
-        <a href="https://github.com/TheWrongLuke" target="_blank" class="btn btn-link"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/lukas-fossati-b3137b228/" target="_blank" class="btn btn-link"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.youtube.com/@thewrongluke" target="_blank" class="btn btn-link"><i class="bi bi-youtube"></i></a> 
-        <a href="https://www.instagram.com/lukas_fossati/" target="_blank" class="btn btn-link"><i class="bi bi-instagram"></i></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <hr>
-
-    <p class="about">Hi there and thanks for stopping by! My name is Lukas, i'm a passionate programmer who feels enjoyment and fulfillment from developing games and websites.</p>
-
-    <hr>
-
-    <!-- Main Navigation Buttons -->
-    <div class="buttons_nav container my-4">
-        <div class="row justify-content-center">
-            <div id="projects-Button" class="neon-button neon-button_ nav-btn col-md-2 btn btn-sm" data-target="projects">Projects</div>
-            <div id="career-Button" class="neon-button neon-button_ nav-btn col-md-2 btn btn-sm" data-target="career">Career</div>
-            <div id="skills-Button" class="neon-button neon-button_ nav-btn col-md-2 btn btn-sm" data-target="skills">Skills</div>
-        </div>
-    </div>
-
-    <hr>
-
-    <!-- Projects Section -->
-    <div id="projects" class="content-section" style="display: none;">
-        <!-- Projects Buttons Section -->
-        <h2 class="my-4 projectTitle">Projects</h2>
-        <div class="d-flex justify-content-center gap-3">
-            <a class="project-btn" data-project="project1"><img class="projectIcons" src="ProfitHubLogo.png"></a>
-            <a class="project-btn" data-project="project2"><img class="projectIcons" src="img/FlappyBirdLogo.png"></a>
-            <a class="project-btn" data-project="project3"><img class="projectIcons" src="img/GoldClickerLogo.png"></a>
-            <a class="project-btn" data-project="project4"><img class="projectIcons" src="img/RunnerLogo.png"></a>
-
-            <!-- <a class="project-btn" data-project="project5"><img class="projectIcons" src="Shadow_Trails_Logo.png"></a> -->
+  <main>
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Entry-level developer</p>
+          <h1>Unity game developer with front-end web experience.</h1>
+          <p class="hero-text">
+            I build small but complete projects to strengthen gameplay logic, UI, and responsive web fundamentals.
+            My main focus is game development in Unity with C#, while also working on websites with HTML, CSS, and JavaScript.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="button button-primary">See projects</a>
+            <a href="mailto:lukas.fossati.developer@gmail.com" class="button button-secondary">Contact me</a>
+          </div>
+          <ul class="hero-points">
+            <li>Unity / C#</li>
+            <li>HTML / CSS / JavaScript</li>
+            <li>Italian & English</li>
+          </ul>
         </div>
 
-        <!-- ProfitHub Section -->
-        <div id="project1" class="project-content my-4 ProfitHub" style="display: none;">
-            <hr>
-            <a href="https://thewrongluke.github.io/ProfitHub/" target="_blank">
-                <img src="ProfitHubTitle.png" alt="ProfitHub LOGO">
-            </a>
-            <p style="font-size: 22px;" class="content container col">↑ Click the image above to go to the website ↑</p>
-            <div class="infoProfitHub">
-                <span class="badge bg-primary"> ReleseDate | d07/m04/y2024 </span>
-                <span class="badge bg-success"> Category | Website </span>
-                <span class="badge bg-danger"> Language | HTML </span>
-                <span class="badge bg-danger"> Language | CSS </span>
-                <span class="badge bg-danger"> Language | JavaScript </span>
-            </div>
-            <div class="content container col">
-                <p>ProfitHub is a website my classmate and I designed and developed as part of a school project in just four days. We created a concept for a platform that could generate revenue if fully developed.</p>
-                <p>Our idea is a game-based earning website, where both players and the company can profit. With the gaming industry continuing to grow, many gamers would love the opportunity to earn money simply by playing their favorite games.</p>
-                
-                <h2>Revenue Model</h2>
-                <ul>
-                    <li><strong>Banner Ads:</strong> We plan to monetize the platform through banner advertisements on the website.</li>
-                    <li><strong>Optional Subscription:</strong> In the future, we could offer an optional subscription service through a dedicated app that tracks gameplay, offering subscribers exclusive benefits and rewards.</li>
-                    <li><strong>Sponsorships:</strong> Collaborating with content creators and providing discount codes to their audiences could bring more users to our platform, enhancing visibility and engagement.</li>
-                </ul>
+        <div class="hero-media">
+          <div class="portrait-card">
+            <img src="Circle_Pic.png" alt="Portrait of Lukas Fossati">
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <h2>Here the preview of the website</h2>
-                <div class="container mt-4">
-                    <!-- Two Large Images -->
-                    <div class="image-grid">
-                        <div class="image-container">
-                            <img src="img/profithub/homepage.png" alt="homepage">
-                        </div>
-                        <div class="image-container">
-                            <img src="img/profithub/subscriptions.png" alt="subscriptions">
-                        </div>
-                    </div>
-                
-                    <!-- Three Smaller Images Below -->
-                    <div class="small-image-grid">
-                        <div class="image-container">
-                            <img src="img/profithub/game1.png" alt="game page new arrivals view">
-                        </div>
-                        <div class="image-container">
-                            <img src="img/profithub/game2.png" alt="game page games view">
-                        </div>
-                        <div class="image-container">
-                            <img src="img/profithub/products.png" alt="products">
-                        </div>
-                    </div>
+    <section id="about" class="section">
+      <div class="shell narrow">
+        <div class="section-heading">
+          <p class="section-label">About</p>
+          <h2>A more professional version of your introduction</h2>
+        </div>
+        <div class="panel text-panel">
+          <p>
+            I am a junior developer with a strong interest in game development and interactive software.
+            Most of my practical work so far has been personal and school projects, where I have focused on learning by building.
+          </p>
+          <p>
+            On the game side, I work mainly with Unity and C#, creating small projects that helped me improve core programming logic,
+            procedural systems, UI handling, timers, upgrades, and general gameplay structure. On the web side, I build front-end projects
+            with HTML, CSS, Bootstrap, and JavaScript.
+          </p>
+          <p>
+            Right now, I am looking to present my work in a clearer and more professional way: less “student project page”, more “junior developer portfolio”.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-label">Projects</p>
+          <h2>Selected work</h2>
+        </div>
+
+        <div class="projects-layout">
+          <div class="project-tabs" role="tablist" aria-label="Project selector">
+            <button class="project-tab active" data-project="profithub" role="tab" aria-selected="true">
+              <img src="ProfitHubLogo.png" alt="">
+              <span>ProfitHub</span>
+            </button>
+            <button class="project-tab" data-project="flabbybird" role="tab" aria-selected="false">
+              <img src="img/FlappyBirdLogo.png" alt="">
+              <span>Flabby Bird</span>
+            </button>
+            <button class="project-tab" data-project="goldclicker" role="tab" aria-selected="false">
+              <img src="img/GoldClickerLogo.png" alt="">
+              <span>Gold Clicker</span>
+            </button>
+            <button class="project-tab" data-project="runner" role="tab" aria-selected="false">
+              <img src="img/RunnerLogo.png" alt="">
+              <span>Runner</span>
+            </button>
+          </div>
+
+          <div class="project-panels">
+            <article id="profithub" class="project-panel active panel" role="tabpanel">
+              <div class="project-header-row">
+                <div>
+                  <h3>ProfitHub</h3>
+                  <div class="tags">
+                    <span>Website</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Released 07/04/2024</span>
+                  </div>
                 </div>
-            </div>
+                <a class="button button-small button-secondary" href="https://thewrongluke.github.io/ProfitHub/" target="_blank" rel="noopener noreferrer">Open project</a>
+              </div>
+
+              <p>
+                ProfitHub is a website concept created with a classmate as a school project in four days.
+                The idea was to design a platform where players and the company could both benefit through a game-based earning model.
+              </p>
+              <p>
+                This project is useful in the portfolio because it shows front-end structure, page layout work, and the ability to build and present a concept quickly.
+              </p>
+
+              <div class="gallery gallery-large-first">
+                <img src="img/profithub/homepage.png" alt="ProfitHub homepage preview">
+                <img src="img/profithub/subscriptions.png" alt="ProfitHub subscriptions preview">
+                <img src="img/profithub/game1.png" alt="ProfitHub game page preview">
+                <img src="img/profithub/game2.png" alt="ProfitHub second game page preview">
+                <img src="img/profithub/products.png" alt="ProfitHub products preview">
+              </div>
+            </article>
+
+            <article id="flabbybird" class="project-panel panel" role="tabpanel" hidden>
+              <div class="project-header-row">
+                <div>
+                  <h3>Flabby Bird</h3>
+                  <div class="tags">
+                    <span>Game</span>
+                    <span>Unity</span>
+                    <span>C#</span>
+                    <span>Released 19/05/2025</span>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                A simple project, but a useful one for fundamentals. It helped me work on procedural generation, movement input,
+                score systems, and cleanup of unseen or distant objects.
+              </p>
+
+              <div class="media-block">
+                <video controls preload="metadata">
+                  <source src="videos/FlappyBirdShowcase.mp4" type="video/mp4">
+                </video>
+              </div>
+            </article>
+
+            <article id="goldclicker" class="project-panel panel" role="tabpanel" hidden>
+              <div class="project-header-row">
+                <div>
+                  <h3>Gold Clicker</h3>
+                  <div class="tags">
+                    <span>Game</span>
+                    <span>Unity</span>
+                    <span>C#</span>
+                    <span>Released 25/05/2025</span>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                A clicker game inspired by Cookie Clicker. I used it to practice timers, currency-per-second logic,
+                UI, and simple feedback animations.
+              </p>
+
+              <div class="media-block">
+                <video controls preload="metadata">
+                  <source src="videos/GoldClickerShowcase.mp4" type="video/mp4">
+                </video>
+              </div>
+            </article>
+
+            <article id="runner" class="project-panel panel" role="tabpanel" hidden>
+              <div class="project-header-row">
+                <div>
+                  <h3>Runner</h3>
+                  <div class="tags">
+                    <span>Game</span>
+                    <span>Unity</span>
+                    <span>C#</span>
+                    <span>Ongoing</span>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                A 2D top-down project inspired by Subway Surfers. This is the most advanced one in the portfolio and the best example of where my current interest is.
+              </p>
+              <p>
+                It pushed me to work on level generation with prefabs, boosters, upgrades, timers, cooldowns, UI, and more complex game flow.
+              </p>
+
+              <div class="media-block">
+                <video controls preload="metadata">
+                  <source src="videos/RunnerShowcase.mp4" type="video/mp4">
+                </video>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-label">Skills</p>
+          <h2>What you should highlight instead of raw self-rating bars</h2>
         </div>
 
-        <!-- flabby bird Section -->
-        <div id="project2" class="project-content my-4" style="display: none;">
-            <hr>
-            <h3 class="GunRunnerTitle">Flabby Bird</h3>
-            <div class="infoProfitHub">
-                <span class="badge bg-primary"> ReleseDate | 19/05/2025 </span>
-                <span class="badge bg-success"> Category | Game </span>
-                <span class="badge bg-warning"> Engine | Unity </span>
-                <span class="badge bg-danger"> Language | C# </span>
-            </div>
-            <div class="content container col">
-                <p class="GunRunnerBody">
-                    Even if <strong>Flabby Bird</strong> is an extremely simple game, it's a good project to start your fondamentals,
-                    it helps with a simple procedural generation, simple input movement, score counting
-                    and it's a good way to already start with a memory management by removing unseen or far objects.
-                </p>
-                <video width="720" height="203" controls><source src="videos/FlappyBirdShowcase.mp4" type="video/mp4"></video>
-            </div>
+        <div class="skills-grid">
+          <article class="panel skill-card">
+            <h3>Game Development</h3>
+            <ul>
+              <li>Unity</li>
+              <li>C# gameplay scripting</li>
+              <li>UI systems</li>
+              <li>Timers, upgrades, basic procedural logic</li>
+            </ul>
+          </article>
+
+          <article class="panel skill-card">
+            <h3>Web Development</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="panel skill-card">
+            <h3>Tools</h3>
+            <ul>
+              <li>Visual Studio</li>
+              <li>GitHub</li>
+              <li>Browser dev tools</li>
+            </ul>
+          </article>
+
+          <article class="panel skill-card">
+            <h3>Languages</h3>
+            <ul>
+              <li>Italian</li>
+              <li>English</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-alt">
+      <div class="shell narrow">
+        <div class="section-heading">
+          <p class="section-label">Experience</p>
+          <h2>Relevant background</h2>
         </div>
 
-        <!-- GoldClicker Section -->
-        <div id="project3" class="project-content my-4" style="display: none;">
-            <hr>
-            <h3 class="GunRunnerTitle">Gold Clicker</h3>
-            <div class="infoProfitHub">
-                <span class="badge bg-primary"> ReleseDate | 25/05/2025 </span>
-                <span class="badge bg-success"> Category | Game </span>
-                <span class="badge bg-warning"> Engine | Unity </span>
-                <span class="badge bg-danger"> Language | C# </span>
-            </div>
-            <div class="content container col">
-                <p class="GunRunnerBody">
-                    <strong>Gold Clicker</strong> is a classic clicker game like cookie clicker, 
-                    it's a good way to understand timers, earnings/seconds, calculate currecy per second 
-                    and a first understanding of UI and even small animations.
-                </p>
-                <video width="720" height="405" controls><source src="videos/GoldClickerShowcase.mp4" type="video/mp4"></video>
-            </div>
+        <div class="timeline">
+          <article class="timeline-item panel">
+            <p class="timeline-year">2024</p>
+            <h3>Rally Marshal</h3>
+            <p>
+              Managed road access and helped maintain safety for crowds, drivers, and staff during rally events.
+              This is relevant because it shows responsibility, awareness, and the ability to follow rules under pressure.
+            </p>
+          </article>
+
+          <article class="timeline-item panel">
+            <p class="timeline-year">Ongoing</p>
+            <h3>Private and school coding projects</h3>
+            <p>
+              Built personal and academic projects focused on games and websites, using each one to improve practical development skills.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="shell narrow">
+        <div class="section-heading">
+          <p class="section-label">Contact</p>
+          <h2>Where to reach me</h2>
         </div>
 
-        <!-- Runner Section -->
-        <div id="project4" class="project-content my-4" style="display: none;">
-            <hr>
-            <h3 class="GunRunnerTitle">Runner</h3>
-            <div class="infoProfitHub">
-                <span class="badge bg-primary"> ReleseDate | ... </span>
-                <span class="badge bg-success"> Category | Game </span>
-                <span class="badge bg-warning"> Engine | Unity </span>
-                <span class="badge bg-danger"> Language | C# </span>
-            </div>
-            <div class="content container col">
-                <p class="GunRunnerBody">
-                    <strong>Runner</strong> is has been developed using Unity recreating the game SubwaySurfers but in 2D top-down. 
-                    <br>
-                    <br>
-                    Creating a look alike of subway surfers on a 2D top down was a bit challeging to get the game to function in a 3D way,
-                    being able to run on different levels and jump from one to the other, but it's my favorite game so far i've been working on,
-                    creating boosters like the magnet, jetpack, jump boost, score multiplier was fun and easy once understood the fondamentals.
-                    <br>
-                    <br>
-                    with this game i've reinforced most of the skills i've learned previously, with upgrades, boosters, timers and cooldowns, level generation(using prefabs) and UI.
-                    <br>
-                    <br>
-                    I chose to make this game to challenge my skills and expand my knowledge as all other projects and reinforce the skills i had before. 
-                    <br>
-                    <br>
-                    This is currently the latest project i've been working on.
-                </p>
-                <!-- <h3>Gameplay video will come soon</h3> -->
-                <video width="720" height="405" controls><source src="videos/RunnerShowcase.mp4" type="video/mp4"></video>
-            </div>
+        <div class="panel contact-panel">
+          <p class="contact-intro">
+            This section should stay simple and real. No fake phone number, no placeholder form, no empty links.
+          </p>
+
+          <div class="contact-grid">
+            <a href="mailto:lukas.fossati.developer@gmail.com"><i class="bi bi-envelope"></i> lukas.fossati.developer@gmail.com</a>
+            <a href="https://github.com/TheWrongLuke" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/lukas-fossati-b3137b228/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            <a href="https://www.youtube.com/@thewrongluke" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i> YouTube</a>
+            <a href="https://www.instagram.com/lukas_fossati/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i> Instagram</a>
+          </div>
         </div>
-        
-        <!-- Shadow Trails 
-        <div id="project5" class="project-content my-4" style="display: none;">
-            <hr>
-            <h3 class="GunRunnerTitle">Shadow Trails</h3>
-            <div class="infoProfitHub">
-                <span class="badge bg-primary"> ReleseDate | ... </span>
-                <span class="badge bg-success"> Category | Game </span>
-                <span class="badge bg-warning"> Engine | Unity </span>
-                <span class="badge bg-danger"> Language | C# </span>
-            </div>
-            <div class="content container col">
-                <p class="GunRunnerBody">
-                    <strong>Shadow Trails</strong> is an exciting 2D co-op game designed for 2 players, offering a unique blend of puzzle-solving, speed running, and intense multiplayer experiences. 
-                    Players take control of shadow-like figures with customizable body parts, ranging from cyber arms to pirate legs, allowing for a highly personalized gaming experience. The core mechanics are already in place, including movement and foundational game modes.
-                </p>
-                
-                <p class="GunRunnerBody">
-                    The game is divided into <strong>Single Player</strong> and <strong>Multiplayer</strong> modes. In single player, players can challenge themselves in puzzle levels or time-based speed runs. In multiplayer, players can team up for local or online co-op play. Whether working together or competing against each other, players can select various game modes and maps, ensuring endless fun.
-                </p>
-                
-                <p class="GunRunnerBody">
-                    A key feature of <strong>Shadow Trails</strong> is its character customization system. Players can unlock or purchase unique cosmetic items, from helmets and body armor to cyber enhancements and mystical accessories. Each character is built from modular body parts, allowing players to design their own custom avatars by combining different arms, legs, torsos, and more. You can even draw and upload custom textures, making every character truly one-of-a-kind.
-                </p>
-            
-                <h3>Current Progress</h3>
-                <p class="GunRunnerBody">
-                    At the moment, the core mechanics, including player movement and basic game modes, have been implemented. The main menu is functional, allowing players to navigate through different modes, including the campaign-style map selector for various levels. Future updates will include a richer multiplayer experience and the ability to rank against other players.
-                </p>
-            
-                <h3>What’s Next?</h3>
-                <p class="GunRunnerBody">
-                    Upcoming features include advanced customization options, additional multiplayer modes, and a progression system that rewards players with new unlockable parts. A development video showcasing progress will be uploaded soon. Stay tuned to see how the game evolves!
-                </p>
-            
-                <h3>Development Video(Soon)</h3> 
-                Insert the development video link or embed here
-                <p class="GunRunnerBody">
-                    The development video, which will show off the game mechanics, will be available soon. <em>Keep an eye out for the latest updates!</em>
-                </p>
-                <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/" 
-                    title="Devlog" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-        -->
-        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-wrap">
+      <p>© 2026 Lukas Fossati</p>
+      <a href="#top">Back to top</a>
     </div>
+  </footer>
 
-    <!-- Career Section -->
-    <div id="career" class="content-section" style="display: none;">
-        <h2 class="my-4 careerTitle">Career</h2>
-        <hr>
-        <h2 class="careerTitle">2024</h1>
-        <div class="content container col">
-            <h4>Rally Marchall</h3>
-            <p>I’ve worked as a <strong>Rally Marchall</strong>, the job is very important to insure safety of the crowd,
-                 yourself and also for the drivers to not have to deal with crowd/civilians/vehicles on the road during competition 
-                 and possibly making life threatening situations for everyone. </p>
-        </div>
-    </div>
-
-    <!-- Skills Section -->
-    <div id="skills" class="content-section" style="display: none;">
-        <div id="data_selection_area" class="container kd-selection-content" style="opacity: 1; min-height: 200px;">
-            
-            <div id="pt">Below you will find my self-evaluated skill levels.</div>
-            <hr>
-            
-            <div id="skill-chart-title">Programming Languages</div>
-            
-            <div class="chart-parent chart chart-bar chart-horizontal">
-                <div class="metric" style="width:75%">C# <span class="metric-value">75</span></div>
-                <div class="metric" style="width:70%">HTML + Bootstrap <span class="metric-value">70</span></div>
-                <div class="metric" style="width:50%">CSS <span class="metric-value">50</span></div>
-                <div class="metric" style="width:20%">Javascript <span class="metric-value">20</span></div>
-            </div>
-            <br>
-            <hr>
-            
-            <div id="skill-chart-title">Tools</div>
-            
-            <div class="chart-parent chart chart-bar chart-horizontal">
-                <div class="metric" style="width:80%">Visual Studio<span class="metric-value">80</span></div>
-            </div>
-            
-            <br>
-            <hr>
-            
-            <div id="skill-chart-title">Frameworks &amp; Engines</div>
-            
-            <div class="chart-parent chart chart-bar chart-horizontal">
-                <div class="metric" style="width:70%">Unity<span class="metric-value">70</span></div>
-            </div>
-            
-            <br>
-            
-            <div id="skill-chart-title">Spoken Languages</div>
-            
-            <div class="chart-parent chart chart-bar chart-horizontal">
-                <div class="metric" style="width:100%">Italian<span class="metric-value">100</span></div>
-                <div class="metric" style="width:95%">English<span class="metric-value">95</span></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
