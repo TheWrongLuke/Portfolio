@@ -9,7 +9,7 @@ if (menuToggle && siteNav) {
     menuToggle.setAttribute('aria-expanded', String(isOpen));
   });
 
-  navLinks.forEach(link => {
+  navLinks.forEach((link) => {
     link.addEventListener('click', () => {
       siteNav.classList.remove('open');
       menuToggle.classList.remove('open');
@@ -21,22 +21,41 @@ if (menuToggle && siteNav) {
 const projectTabs = document.querySelectorAll('.project-tab');
 const projectPanels = document.querySelectorAll('.project-panel');
 
-projectTabs.forEach(tab => {
+projectTabs.forEach((tab) => {
   tab.addEventListener('click', () => {
-    const targetId = tab.dataset.project;
+    activateProject(tab.dataset.project);
+  });
+});
 
-    projectTabs.forEach(otherTab => {
-      otherTab.classList.remove('active');
-      otherTab.setAttribute('aria-selected', 'false');
-    });
+function activateProject(targetId) {
+  projectTabs.forEach((otherTab) => {
+    const isTarget = otherTab.dataset.project === targetId;
+    otherTab.classList.toggle('active', isTarget);
+    otherTab.setAttribute('aria-selected', String(isTarget));
+  });
 
-    projectPanels.forEach(panel => {
-      const isTarget = panel.id === targetId;
-      panel.classList.toggle('active', isTarget);
-      panel.hidden = !isTarget;
-    });
+  projectPanels.forEach((panel) => {
+    const isTarget = panel.id === targetId;
+    panel.classList.toggle('active', isTarget);
+    panel.hidden = !isTarget;
+  });
+}
 
-    tab.classList.add('active');
-    tab.setAttribute('aria-selected', 'true');
+const projectJumpLinks = document.querySelectorAll('.project-jump');
+
+projectJumpLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    const targetId = link.dataset.project;
+    const hash = link.getAttribute('href');
+    const target = hash ? document.querySelector(hash) : null;
+
+    if (!targetId || !target) {
+      return;
+    }
+
+    event.preventDefault();
+    activateProject(targetId);
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    history.replaceState(null, '', hash);
   });
 });

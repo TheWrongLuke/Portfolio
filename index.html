@@ -18,7 +18,7 @@
     <div class="shell nav-wrap">
       <a class="brand" href="#top">Lukas Fossati</a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="siteNav">
         <span></span>
         <span></span>
         <span></span>
@@ -26,6 +26,7 @@
 
       <nav class="site-nav" id="siteNav">
         <a href="#about">About</a>
+        <a href="#focus">Focus</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
@@ -51,7 +52,7 @@
             <li>Unity / C#</li>
             <li>HTML / CSS / JavaScript</li>
             <li>Java</li>
-            <li>Italian & English</li>
+            <li>Italian &amp; English</li>
           </ul>
         </div>
 
@@ -67,52 +68,127 @@
       <div class="shell narrow">
         <div class="section-heading">
           <p class="section-label">About</p>
-        </div>
-        <div class="panel text-panel">
-          <h2>Me</h2>
-          <p>
-            I am a junior developer living in Estonia with a strong interest in developing. 
-            I have experience with Unity and C#, and I also work with HTML, CSS, JavaScript, Bootstrap, and Java. 
-            I enjoy learning by building projects, solving technical problems, and improving my skills through practical work.
-          </p>
+          <h2>What I bring</h2>
         </div>
 
-        <div class="section-heading"></div>
+        <div class="two-column-panels">
+          <article class="panel text-panel">
+            <h3>Profile</h3>
+            <p>
+              I am a junior developer with a strong interest in building software by actually shipping projects.
+              My strongest practical work so far is in Unity and C#, and I also build front-end websites using HTML, CSS, JavaScript, and Bootstrap.
+              I like learning by solving concrete problems, improving structure, and turning ideas into working results.
+            </p>
+          </article>
 
-        <div class="panel text-panel">
-          <h2>What I look for</h2>
-          <p>
-            Right now, I’m looking for opportunities where
-            I can get real-world experience, build on what
-            I know, and pick up new skills. I’m open to
-            different kinds of roles — mostly just looking
-            for a place where I can learn and grow.
-          </p>
+          <article class="panel text-panel">
+            <h3>What I am looking for</h3>
+            <p>
+              I am looking for junior or internship opportunities where I can contribute to real projects, improve quickly, and gain more professional experience.
+              I am especially interested in game development, front-end work, and software roles where problem-solving and implementation matter.
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section section-alt">
+    <section id="focus" class="section section-alt">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-label">Current focus</p>
+          <h2>What I am working on right now</h2>
+        </div>
+
+        <div class="focus-grid">
+          <article class="panel focus-card focus-card-wide">
+            <p class="card-eyebrow">In development since October 2025</p>
+            <h3>Mobile and PC strategy prototype</h3>
+            <p>
+              I am currently building a more advanced Unity project inspired by real-time lane-based strategy games.
+              The work includes gameplay systems, deployment logic, combat flow, UI, multiplayer synchronization, and ongoing iteration on mechanics and polish.
+            </p>
+            <p>
+              The project is AI-assisted for research and iteration support to make that workflow clear, while the direction, debugging and implementation decisions remain mine.
+            </p>
+            <ul>
+              <li>Unity + C# gameplay systems</li>
+              <li>Multiplayer and real-time interaction</li>
+              <li>UI, balancing, and character design</li>
+              <li>AI-assisted research and iteration support</li>
+            </ul>
+          </article>
+
+          <article class="panel focus-card">
+            <p class="card-eyebrow">Direction</p>
+            <h3>Portfolio goal</h3>
+            <p>
+              This portfolio is structured to show practical work: what I built, which tools I used, and which skills each project demonstrates.
+            </p>
+          </article>
+
+          <article class="panel focus-card">
+            <p class="card-eyebrow">Strengths</p>
+            <h3>What stands out</h3>
+            <p>
+              My strongest areas right now are Unity, C#, front-end layout work, rapid learning, and improving projects through debugging.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
       <div class="shell">
         <div class="section-heading">
           <p class="section-label">Projects</p>
+          <h2>Selected work</h2>
+        </div>
+
+        <div class="project-summary-grid">
+          <article class="panel summary-card">
+            <p class="card-eyebrow">Web project</p>
+            <h3>ProfitHub</h3>
+            <p>Front-end concept website initially built with a classmate, then improved as solo.</p>
+            <a href="#profithub-detail" class="text-link project-jump" data-project="profithub">See details</a>
+          </article>
+
+          <article class="panel summary-card">
+            <p class="card-eyebrow">Unity project</p>
+            <h3>Flabby Bird</h3>
+            <p>Arcade-style Unity project focused on gameplay fundamentals and game flow.</p>
+            <a href="#flabbybird-detail" class="text-link project-jump" data-project="flabbybird">See details</a>
+          </article>
+
+          <article class="panel summary-card">
+            <p class="card-eyebrow">Unity project</p>
+            <h3>Gold Clicker</h3>
+            <p>Idle/clicker prototype focused on progression loops, timers, and UI feedback.</p>
+            <a href="#goldclicker-detail" class="text-link project-jump" data-project="goldclicker">See details</a>
+          </article>
+
+          <article class="panel summary-card">
+            <p class="card-eyebrow">Unity project</p>
+            <h3>Runner</h3>
+            <p>My second most advanced showcased game project, centered on systems, pacing, modifiers and savings.</p>
+            <a href="#runner-detail" class="text-link project-jump" data-project="runner">See details</a>
+          </article>
         </div>
 
         <div class="projects-layout">
           <div class="project-tabs" role="tablist" aria-label="Project selector">
-            <button class="project-tab active" data-project="profithub" role="tab" aria-selected="true">
+            <button class="project-tab active" data-project="profithub" role="tab" aria-selected="true" aria-controls="profithub">
               <img src="ProfitHubLogo.png" alt="">
               <span>ProfitHub</span>
             </button>
-            <button class="project-tab" data-project="flabbybird" role="tab" aria-selected="false">
+            <button class="project-tab" data-project="flabbybird" role="tab" aria-selected="false" aria-controls="flabbybird">
               <img src="img/FlappyBirdLogo.png" alt="">
               <span>Flabby Bird</span>
             </button>
-            <button class="project-tab" data-project="goldclicker" role="tab" aria-selected="false">
+            <button class="project-tab" data-project="goldclicker" role="tab" aria-selected="false" aria-controls="goldclicker">
               <img src="img/GoldClickerLogo.png" alt="">
               <span>Gold Clicker</span>
             </button>
-            <button class="project-tab" data-project="runner" role="tab" aria-selected="false">
+            <button class="project-tab" data-project="runner" role="tab" aria-selected="false" aria-controls="runner">
               <img src="img/RunnerLogo.png" alt="">
               <span>Runner</span>
             </button>
@@ -120,27 +196,48 @@
 
           <div class="project-panels">
             <article id="profithub" class="project-panel active panel" role="tabpanel">
-              <div class="project-header-row">
+              <div id="profithub-detail" class="project-header-row">
                 <div>
+                  <p class="card-eyebrow">Front-end concept website</p>
                   <h3>ProfitHub</h3>
                   <div class="tags">
-                    <span>Website</span>
                     <span>HTML</span>
                     <span>CSS</span>
                     <span>JavaScript</span>
-                    <span>Last Update 07/04/2024</span>
+                    <span>Team project</span>
+                    <span>Rapid delivery</span>
                   </div>
                 </div>
                 <a class="button button-small button-secondary" href="https://thewrongluke.github.io/ProfitHub/" target="_blank" rel="noopener noreferrer">Open project</a>
               </div>
 
               <p>
-                ProfitHub is a website concept created with a classmate as a school project in four days.
-                The idea was to design a platform where players and the company could both benefit through a game-based earning model.
+                ProfitHub is a front-end concept website created with a classmate during a short school sprint.
+                The goal was to present a working concept of business idea.
               </p>
               <p>
-                This project is useful in the portfolio because it shows front-end structure, page layout work, and the ability to build and present a concept quickly.
+                This project shows that I can build layouts, organize content into clear sections, and turn an idea into a usable front-end presentation.
               </p>
+
+              <div class="project-detail-grid">
+                <div class="detail-box">
+                  <h4>What I worked on</h4>
+                  <ul>
+                    <li>Page layout and front-end structure</li>
+                    <li>Styling and visual consistency</li>
+                    <li>Content presentation for multiple sections</li>
+                  </ul>
+                </div>
+                <div class="detail-box">
+                  <h4>What it demonstrates</h4>
+                  <ul>
+                    <li>Front-end fundamentals</li>
+                    <li>Responsive thinking and layout work</li>
+                    <li>Collaboration on a small project</li>
+                    <li>Ability to deliver a working concept</li>
+                  </ul>
+                </div>
+              </div>
 
               <div class="gallery gallery-large-first">
                 <img src="img/profithub/homepage.png" alt="ProfitHub homepage preview">
@@ -152,22 +249,46 @@
             </article>
 
             <article id="flabbybird" class="project-panel panel" role="tabpanel" hidden>
-              <div class="project-header-row">
+              <div id="flabbybird-detail" class="project-header-row">
                 <div>
+                  <p class="card-eyebrow">Arcade Unity prototype</p>
                   <h3>Flabby Bird</h3>
                   <div class="tags">
-                    <span>Game</span>
                     <span>Unity</span>
                     <span>C#</span>
-                    <span>Last Update 19/05/2025</span>
+                    <span>Gameplay loop</span>
+                    <span>Procedural spawning</span>
                   </div>
                 </div>
               </div>
 
               <p>
-                A simple project, but a useful one for fundamentals. It helped me work on procedural generation, movement input,
-                score systems, and cleanup of unseen or distant objects.
+                Flabby Bird is a small Unity project built to strengthen core gameplay fundamentals.
+                It focuses on player movement, obstacle flow, score tracking, restart logic, and keeping the gameplay loop clean and readable.
               </p>
+              <p>
+                Even though it is a smaller project, it helped me build stronger habits around structure, timing, and making simple systems work reliably together.
+              </p>
+
+              <div class="project-detail-grid">
+                <div class="detail-box">
+                  <h4>What I built</h4>
+                  <ul>
+                    <li>Player movement and input handling</li>
+                    <li>Obstacle generation and pacing</li>
+                    <li>Score system and game-over flow</li>
+                    <li>Cleanup for unseen or distant objects</li>
+                  </ul>
+                </div>
+                <div class="detail-box">
+                  <h4>What it demonstrates</h4>
+                  <ul>
+                    <li>Gameplay scripting in C#</li>
+                    <li>Basic procedural logic</li>
+                    <li>Scene flow and restart handling</li>
+                  </ul>
+                </div>
+              </div>
 
               <div class="media-block">
                 <video controls preload="metadata">
@@ -177,22 +298,47 @@
             </article>
 
             <article id="goldclicker" class="project-panel panel" role="tabpanel" hidden>
-              <div class="project-header-row">
+              <div id="goldclicker-detail" class="project-header-row">
                 <div>
+                  <p class="card-eyebrow">Idle / clicker Unity prototype</p>
                   <h3>Gold Clicker</h3>
                   <div class="tags">
-                    <span>Game</span>
                     <span>Unity</span>
                     <span>C#</span>
-                    <span>Last Update 25/05/2025</span>
+                    <span>Progression systems</span>
+                    <span>UI feedback</span>
                   </div>
                 </div>
               </div>
 
               <p>
-                A clicker game inspired by Cookie Clicker. I used it to practice timers, currency-per-second logic,
-                UI, and simple feedback animations.
+                Gold Clicker is a clicker game inspired by idle progression games.
+                I used it to work on timers, passive currency generation, upgrade pacing, and feedback that makes progression feel clearer to the player.
               </p>
+              <p>
+                The project is useful because it pushed me to think about gameplay loops, reward structure, and how small UI changes affect the feel of progression.
+              </p>
+
+              <div class="project-detail-grid">
+                <div class="detail-box">
+                  <h4>What I built</h4>
+                  <ul>
+                    <li>Click-based currency system</li>
+                    <li>Passive income and timer logic</li>
+                    <li>Basic upgrade and progression flow</li>
+                    <li>UI feedback and animation touches</li>
+                  </ul>
+                </div>
+                <div class="detail-box">
+                  <h4>What it demonstrates</h4>
+                  <ul>
+                    <li>State and value management</li>
+                    <li>Loop design and balancing basics</li>
+                    <li>Gameplay-to-UI connection</li>
+                    <li>Incremental feature building</li>
+                  </ul>
+                </div>
+              </div>
 
               <div class="media-block">
                 <video controls preload="metadata">
@@ -202,24 +348,47 @@
             </article>
 
             <article id="runner" class="project-panel panel" role="tabpanel" hidden>
-              <div class="project-header-row">
+              <div id="runner-detail" class="project-header-row">
                 <div>
+                  <p class="card-eyebrow">Top-down runner prototype</p>
                   <h3>Runner</h3>
                   <div class="tags">
-                    <span>Game</span>
                     <span>Unity</span>
                     <span>C#</span>
-                    <span>Completed 30/10/2025</span>
+                    <span>Systems-focused</span>
+                    <span>Most advanced showcased build</span>
                   </div>
                 </div>
               </div>
 
               <p>
-                A 2D top-down project inspired by Subway Surfers. This is the most advanced one in the portfolio as i had to make a 2D top-down game act as 3D.
+                Runner is my most advanced currently showcased game project.
+                It is a 2D top-down runner inspired by endless-runner design, and it pushed me to make a top-down game feel more dynamic and readable in motion.
               </p>
               <p>
-                It pushed me to work on level generation with prefabs, boosters, upgrades, timers, cooldowns, UI, and more complex game flow.
+                This project gave me more practice with game flow, prefab-based content, boosters, timers, upgrades, and connecting multiple systems into one playable loop.
               </p>
+
+              <div class="project-detail-grid">
+                <div class="detail-box">
+                  <h4>What I built</h4>
+                  <ul>
+                    <li>Top-down runner gameplay flow</li>
+                    <li>Prefab-based content setup</li>
+                    <li>Boosters, timers, and upgrades</li>
+                    <li>UI and overall progression structure</li>
+                  </ul>
+                </div>
+                <div class="detail-box">
+                  <h4>What it demonstrates</h4>
+                  <ul>
+                    <li>Combining several gameplay systems</li>
+                    <li>Iteration on pacing and feel</li>
+                    <li>Handling more complex project scope</li>
+                    <li>Stronger organization than my smaller prototypes</li>
+                  </ul>
+                </div>
+              </div>
 
               <div class="media-block">
                 <video controls preload="metadata">
@@ -232,54 +401,58 @@
       </div>
     </section>
 
-    <section id="skills" class="section">
+    <section id="skills" class="section section-alt">
       <div class="shell">
         <div class="section-heading">
           <p class="section-label">Skills</p>
+          <h2>Tools and areas I work with</h2>
         </div>
 
         <div class="skills-grid">
           <article class="panel skill-card">
+            <h3>Languages</h3>
+            <ul>
+              <li>C#</li>
+              <li>JavaScript</li>
+              <li>Java</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </article>
+
+          <article class="panel skill-card">
             <h3>Game Development</h3>
             <ul>
               <li>Unity</li>
-              <li>C# gameplay scripting</li>
-              <li>Basic UI systems</li>
-              <li>Timers, upgrades, basic procedural logic</li>
-              <li>Game phases logic</li>
+              <li>Gameplay scripting</li>
+              <li>UI implementation</li>
+              <li>Timers, upgrades, progression logic</li>
             </ul>
           </article>
 
           <article class="panel skill-card">
             <h3>Web Development</h3>
             <ul>
-              <li>HTML</li>
-              <li>CSS</li>
+              <li>Page layout and responsive structure</li>
+              <li>Front-end styling</li>
+              <li>JavaScript interaction basics</li>
               <li>Bootstrap</li>
-              <li>JavaScript</li>
             </ul>
           </article>
 
           <article class="panel skill-card">
-            <h3>Tools</h3>
+            <h3>Tools &amp; workflow</h3>
             <ul>
               <li>Visual Studio</li>
               <li>GitHub</li>
-            </ul>
-          </article>
-
-          <article class="panel skill-card">
-            <h3>Languages</h3>
-            <ul>
-              <li>Italian</li>
-              <li>English</li>
+              <li>Project-based learning</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section section-alt">
+    <section id="experience" class="section">
       <div class="shell narrow">
         <div class="section-heading">
           <p class="section-label">Experience</p>
@@ -293,7 +466,7 @@
             <p>
               Kood is a well known organization in Estonia that teaches Java,
               focusing on teaching problem solving, debugging and teamwork.
-              With the goal to help people get into the IT job industry.  
+              With the goal to help people get into the IT job industry.
             </p>
           </article>
         </div>
