@@ -606,3 +606,19 @@ button {
   border-color: rgba(155, 178, 255, 0.3);
   background: rgba(255, 255, 255, 0.05);
 }
+
+.video-embed {
+  width: 100%;
+  margin-top: 1.5rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #000;
+}
+
+.video-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
