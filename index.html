@@ -180,6 +180,13 @@
 
         <div class="project-summary-grid">
           <article class="panel summary-card">
+            <p class="card-eyebrow">Web + data project</p>
+            <h3>Call of Block</h3>
+            <p>Stat tracker website with playtest scheduling, account creation, profile personalization, and Minecraft data sent into Supabase.</p>
+            <a href="#callofblock-detail" class="text-link project-jump" data-project="callofblock">See details</a>
+          </article>
+
+          <article class="panel summary-card">
             <p class="card-eyebrow">Web project</p>
             <h3>ProfitHub</h3>
             <p>Front-end concept website initially built with a classmate, then improved as solo.</p>
@@ -210,7 +217,11 @@
 
         <div class="projects-layout">
           <div class="project-tabs" role="tablist" aria-label="Project selector">
-            <button class="project-tab active" data-project="profithub" role="tab" aria-selected="true" aria-controls="profithub">
+            <button class="project-tab active" data-project="callofblock" role="tab" aria-selected="true" aria-controls="callofblock">
+              <img src="img/call-of-block/icon.png" alt="">
+              <span>Call of Block</span>
+            </button>
+            <button class="project-tab" data-project="profithub" role="tab" aria-selected="false" aria-controls="profithub">
               <img src="ProfitHubLogo.png" alt="">
               <span>ProfitHub</span>
             </button>
@@ -229,7 +240,63 @@
           </div>
 
           <div class="project-panels">
-            <article id="profithub" class="project-panel active panel" role="tabpanel">
+            <article id="callofblock" class="project-panel active panel" role="tabpanel">
+              <div id="callofblock-detail" class="project-header-row">
+                <div>
+                  <p class="card-eyebrow">Minecraft stat tracker and community site</p>
+                  <h3>Call of Block</h3>
+                  <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Supabase</span>
+                    <span>API integration</span>
+                  </div>
+                </div>
+                <a class="button button-small button-secondary" href="https://thewrongluke.github.io/CallOfBlock-Stat-Tracker/" target="_blank" rel="noopener noreferrer">Open project</a>
+              </div>
+
+              <p>
+                I built this project to give Call of Block players one place to track Battle Royale and Deathmatch stats,
+                join playtests, create an account, and personalize their profile.
+              </p>
+              <p>
+                I used an API to send Minecraft information into Supabase and then used that data across the site for leaderboards,
+                match history, player profiles, and account-linked stat views.
+              </p>
+
+              <div class="project-detail-grid">
+                <div class="detail-box">
+                  <h4>What I built</h4>
+                  <ul>
+                    <li>Battle Royale and Deathmatch stat pages</li>
+                    <li>Account creation, linked profiles, and customization</li>
+                    <li>Playtest scheduling and community pages</li>
+                    <li>API-to-Supabase sync for Minecraft data</li>
+                  </ul>
+                </div>
+                <div class="detail-box">
+                  <h4>What it shows</h4>
+                  <ul>
+                    <li>Turning game data into a clear web product</li>
+                    <li>Working with external data and stored stats</li>
+                    <li>Handling dense UI without losing readability</li>
+                    <li>Building around a real multiplayer community project</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="gallery gallery-callofblock">
+                <img class="project-shot project-shot--wide" src="img/call-of-block/profile.jpeg" alt="Call of Block player overview page with Battle Royale and Deathmatch profile stats" loading="lazy" decoding="async">
+                <img class="project-shot" src="img/call-of-block/leaderboard.jpeg" alt="Call of Block leaderboard page with ranked player stats and filters" loading="lazy" decoding="async">
+                <img class="project-shot" src="img/call-of-block/missions.jpeg" alt="Call of Block profile side panel with weekly missions and progression" loading="lazy" decoding="async">
+                <img class="project-shot project-shot--portrait" src="img/call-of-block/personalization.jpeg" alt="Call of Block account and personalization page with linked Minecraft profile and badges" loading="lazy" decoding="async">
+                <img class="project-shot project-shot--portrait" src="img/call-of-block/history.jpeg" alt="Call of Block match history page with tracked results and player performance" loading="lazy" decoding="async">
+                <img class="project-shot project-shot--narrow" src="img/call-of-block/landing.jpeg" alt="Call of Block home page with game modes, playtests, FAQ, and hub sections" loading="lazy" decoding="async">
+              </div>
+            </article>
+
+            <article id="profithub" class="project-panel panel" role="tabpanel" hidden>
               <div id="profithub-detail" class="project-header-row">
                 <div>
                   <p class="card-eyebrow">Front-end concept website</p>
@@ -542,6 +609,30 @@
       <a href="#top">Back to top</a>
     </div>
   </footer>
+
+  <div class="image-viewer" id="imageViewer" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Expanded project image">
+    <div class="image-viewer-shell">
+      <div class="image-viewer-toolbar">
+        <p class="image-viewer-caption" id="imageViewerCaption"></p>
+        <div class="image-viewer-actions">
+          <button class="image-viewer-button" id="imageZoomOut" type="button" aria-label="Zoom out">
+            <i class="bi bi-dash-lg"></i>
+          </button>
+          <button class="image-viewer-button image-viewer-zoom-label" id="imageZoomReset" type="button" aria-label="Reset zoom">100%</button>
+          <button class="image-viewer-button" id="imageZoomIn" type="button" aria-label="Zoom in">
+            <i class="bi bi-plus-lg"></i>
+          </button>
+          <button class="image-viewer-button image-viewer-close" id="imageViewerClose" type="button" aria-label="Close image viewer">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="image-viewer-stage" id="imageViewerStage">
+        <img id="imageViewerImage" alt="">
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
